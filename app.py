@@ -89,53 +89,7 @@ def answer_question(
         return ""
 
 
-# import streamlit as st
-
-# def clear_text():
-#     st.session_state["text"] = ""
-
-# def main():
-#     st.title("Chat Interface")
-
-#     # data = load_data()
-
-#     # Initialize session history to store messages
-#     if "session_history" not in st.session_state:
-#         st.session_state.session_history = []
-
-#     # Create a placeholder for displaying session history
-#     chat_history_placeholder = st.empty()
-
-#     user_input = st.text_input("Ask a question", key="text")
-
-#     # Create a button to simulate user response
-#     if st.button("Send"):
-#         # Append user input to session history
-#         st.session_state.session_history.append(("Question", user_input))
-
-
-#         # Process user input and generate bot response (replace this with your logic)
-#         bot_response = f"Bot: You said: '{user_input}'"
-#         # bot_response = answer_question(data, question=user_input)
-
-#         # Append bot response to session history
-#         st.session_state.session_history.append(("Answer", bot_response))
-
-#         # Update the chat history placeholder with the updated session history
-#         chat_history_placeholder.text("\n".join([f"{sender}: {message}" for sender, message in st.session_state.session_history]))
-
-#         # Clear the user input after processing
-#         st.button("clear text input", on_click=clear_text)
-
-#     # Display session history by default
-#     chat_history_placeholder.text("\n\n".join([f"{sender}: {message}" for sender, message in st.session_state.session_history]))
-
-# if __name__ == "__main__":
-#     main()
-
-
-import streamlit as st
-
+# streamlit functions
 def clear_text():
     st.session_state["text"] = ""
 

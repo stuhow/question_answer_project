@@ -3,4 +3,4 @@ processed/scraped.csv
 .env
 .ipynb_checkpoints/
 .python-version
-australia.txt
+.streamlit/
