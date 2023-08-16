@@ -6,6 +6,8 @@ from openai.embeddings_utils import distances_from_embeddings
 
 import openai
 
+openai.api_key = st.secrets['api']
+
 # Load CSV data
 @st.cache_data  # Decorate the function with st.cache to cache its result
 def load_data():
