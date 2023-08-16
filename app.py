@@ -198,8 +198,8 @@ def main():
             if user_input == "":
                 bot_response = "Please ask a question."
             else:
-                bot_response = user_input                                                    # used for UI testing
-                # bot_response = answer_question(data, question=user_input)
+                # bot_response = user_input                                                    # used for UI testing
+                bot_response = answer_question(data, question=user_input)
 
             # Append bot response to session history
             st.session_state.session_history.append(("Answer", bot_response))
@@ -218,7 +218,7 @@ def main():
         # Display session history by default
         formatted_history = format_session_history(st.session_state.session_history)
         chat_history_placeholder.text(formatted_history)
-        st.write(formatted_history)
+        # st.write(formatted_history)
 
 
     # a button to clear and dislpay empty chat history
