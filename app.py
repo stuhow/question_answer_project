@@ -128,8 +128,9 @@ def insert_line_breaks(message, max_characters):
 
 def main():
     st.title("Travel support chatbot")
-    st.write("#### I can help with any info you would get from the FCDO travel advice country pages e.g. Do i need a visa to travel to india?")
-    # st.write("#### e.g. Do i need a visa to travel to india?")
+    st.write("Ask me questions about a country e.g. when is the best time of year to travel to X?, Is it safe to travel to X and are there any areas i should avoid?, Should i be worried about Zica in X")
+    st.write("Answers are sourced from the Foreign office country advice pages and Audley travels destination best time to visit pages")
+    # st.write("There is currently no memory feature to remember past question so you can't ask follow up questions. You just need to remember to add the county to each question.")
 
     data = load_data()
 
