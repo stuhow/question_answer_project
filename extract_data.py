@@ -67,3 +67,6 @@ def api_crawl():
 
             # write the text to the file in the text directory
             f.write(text)
+
+if __name__ == "__main__":
+    api_crawl()
