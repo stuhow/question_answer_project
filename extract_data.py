@@ -48,6 +48,8 @@ def api_crawl():
         # iterate through url list to get all the text for every country
     for country in api_url_list:
 
+        print(country[23:])
+
 
         # Save text from the url to a country.txt file
         with open('raw_data/'+ country[23:] + ".txt", "w", encoding="UTF-8") as f:

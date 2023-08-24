@@ -6,3 +6,4 @@ processed/scraped.csv
 .streamlit/
 notebooks/
 archive/
+__pycache__/
